@@ -146,3 +146,8 @@ Actually, the library includes that parser for reasons of convenience.
 
 Last but not least, the library contains valuable knowledge and experience
 of coworkers who showed my one or two tricks.
+
+## License
+
+Released under the MIT License (MIT) &ndash; see file LICENSE in this software's
+repository.

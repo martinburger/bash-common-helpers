@@ -1,3 +1,7 @@
+# Copyright (c) 2014 Martin Burger
+# Released under the MIT License (MIT)
+# https://github.com/martinburger/bash-common-helpers/blob/master/LICENSE
+
 ################################################################################
 #
 # SEE README.MD ON HOW TO USE THE FUNCTIONS PROVIDED BY THIS LIBRARY.
