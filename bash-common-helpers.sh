@@ -393,8 +393,8 @@ function cmn_assert_ini_variables_exist {
 #
 #
 # Ruediger Meier's "simple INI file parser" follows.
-# Commit: daf1fd3cb508e595b64c1e234d0a65b687754384
-# Date: Mar 5, 2013 9:35 AM GMT+01:00
+# Commit: 8fb95e3b335823bc85604fd06c32b0d25f2854c5
+# Date: 2014-10-21T08:40:19Z
 #
 #
 
@@ -403,8 +403,10 @@ function cmn_assert_ini_variables_exist {
 #
 # Copyright (c) 2009    Kevin Porter / Advanced Web Construction Ltd
 #                       (http://coding.tinternet.info, http://webutils.co.uk)
-# Copyright (c) 2010-2012     Ruediger Meier <sweet_f_a@gmx.de>
+# Copyright (c) 2010-2014     Ruediger Meier <sweet_f_a@gmx.de>
 #                             (https://github.com/rudimeier/)
+#
+# License: BSD-3-Clause, see LICENSE file
 #
 # Simple INI file parser.
 #
