@@ -1,6 +1,6 @@
 # This workflow does continuous integration
 
-name: CI
+name: Continuous Integration
 
 # Trigger the workflow on push or pull request events but only for the master branch
 on:
@@ -11,7 +11,8 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # For now, this workflow contains a single job called "test"
+
+  # Tests
   test:
     # The type of runner that this job will run on
     runs-on: ubuntu-latest
@@ -24,3 +25,21 @@ jobs:
       # Runs ShellSpec
       - name: Run ShellSpec
         run: echo "[TODO] actually run ShellSpec"
+
+  # Static code analysis
+  lint:
+    # The type of runner that this job will run on
+    runs-on: ubuntu-latest
+
+    # The sequence of tasks that will be executed as part of this job
+    steps:
+      # Checks-out the repository under $GITHUB_WORKSPACE, so this job can access it
+      - uses: actions/checkout@v2
+
+      # Runs ShellCheck
+      - name: Run ShellCheck
+        # https://github.com/ludeeus/action-shellcheck
+        uses: ludeeus/action-shellcheck@0.5.0
+        with:
+          # Ignore ShellSpec files
+          ignore: spec
